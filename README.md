@@ -5,7 +5,7 @@ created by Irfandi Iqbal Abimanyu
 
 ## Demo
 
-[![Vercel](https://img.shields.io/badge/Vercel-inkor--irfnd.vercel.app-black?style=flat-square)](https://inkor-irfnd.vercel.app/)
+[![Vercel](https://img.shields.io/badge/Vercel-Demo-teal?style=flat-square&logo=vercel&logoColor=white)](https://hello-inkor-irfnd.vercel.app/)
 
 ## Local Install
 

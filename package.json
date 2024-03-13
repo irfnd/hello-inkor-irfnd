@@ -3,10 +3,11 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
+		"prepare": "husky",
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint": "eslint \"src/**/*.{ts,tsx}\" --fix --report-unused-disable-directives --max-warnings 0",
-		"format": "prettier --write \"**/*.{ts,tsx,cjs,json,md}\"",
+		"format": "prettier --write \"**/*.{ts,tsx,cjs,js,json,md,html,css}\"",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -27,11 +28,17 @@
 		"eslint": "^8.57.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.5",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
 		"postcss": "^8.4.35",
 		"prettier": "^3.2.5",
 		"tailwindcss": "^3.4.1",
 		"typescript": "^5.2.2",
 		"vite": "^5.1.6"
 	},
-	"prettier": "@irfnd/prettier-config"
+	"prettier": "@irfnd/prettier-config",
+	"lint-staged": {
+		"src/**/*.{ts,tsx}": "eslint --fix --report-unused-disable-directives --max-warnings 0",
+		"**/*.{ts,tsx,cjs,js,json,md,html,css}": "prettier --write"
+	}
 }
